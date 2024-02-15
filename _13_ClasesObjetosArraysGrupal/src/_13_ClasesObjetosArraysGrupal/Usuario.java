@@ -48,6 +48,19 @@ public class Usuario {
 		this.valoraciones = valoraciones;
 	}
 	
+	public boolean devolverMayorOMenorMediaValoracion(double nota) {
+		double media = this.devolverValoracionMedia();
+		
+		boolean flag = false;
+		if (nota>media) {
+			flag= true;
+		}
+		return flag;
+	}
+	
+	public boolean devolverMayorOMenorMediaValoracionTernario(double nota) {
+		return (nota>this.devolverValoracionMedia())?true:false;
+	}
 	
 	
 	
