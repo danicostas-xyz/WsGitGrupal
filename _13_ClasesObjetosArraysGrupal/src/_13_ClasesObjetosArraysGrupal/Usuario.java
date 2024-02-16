@@ -57,7 +57,7 @@ public class Usuario {
 		return media;
 		
 	}
-	public void motrarValoraciones() {
+	public void mostrarValoraciones() {
 		
 		for(int i = 0;i < this.valoraciones.length ;i++) {
 			System.out.println("Lista de valoraciones");
@@ -90,6 +90,7 @@ public class Usuario {
 	public boolean devolverMayorOMenorMediaValoracionTernario(double nota) {
 		return (nota>this.devolverValoracionMedia())?true:false;
 	}
+	
 	
 	
 	
